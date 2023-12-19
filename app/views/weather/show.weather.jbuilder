@@ -1,0 +1,1 @@
+json.extract! @weather, :temperature, :weather_code, :city

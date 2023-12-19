@@ -1,0 +1,9 @@
+    <h1>Weather Information</h1>
+  <% if @weather %>
+    <p>Temperature: <%= @weather.temperature %> °C</p>
+    <p>Precipitation: <%= @weather.precipitation %> mm/h</p>
+    <p>Weather Code: <%= @weather.weather_code %></p>
+    <%= link_to 'Select Another City', weather_select_city_path %>
+  <% else %>
+    <p>No weather data available</p>
+  <% end %>

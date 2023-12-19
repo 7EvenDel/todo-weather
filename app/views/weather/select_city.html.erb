@@ -1,0 +1,6 @@
+  <h1>Select City</h1>
+
+  <%= form_tag(weather_get_weather_path, method: 'get') do %>
+    <%= select_tag(:city, options_for_select(@cities)) %>
+    <%= button_to "Get Weather", weather_get_weather_path %>
+  <% end %>
